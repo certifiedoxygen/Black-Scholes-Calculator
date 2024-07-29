@@ -134,8 +134,8 @@ def main():
     ## Side Bar
     st.sidebar.markdown("<h1 style = 'text-align: left;'>Black-Scholes Calculator</h1>", unsafe_allow_html = True)
     strike_default = (100 - ((fetch_nifty()) % 100)) + fetch_nifty()
-    strike = st.sidebar.number_input("Strike Price", value = strike_default, format = "%0.1f")
-    spot = st.sidebar.number_input("Spot Price of Underlying (default is NIFTY50)", value = fetch_nifty(), format = "%0.1f")    
+    strike = st.sidebar.number_input("Strike Price", value = strike_default, step = 5.0, format = "%0.1f")
+    spot = st.sidebar.number_input("Spot Price of Underlying (default is NIFTY50)", value = fetch_nifty(), step = 5.0, format = "%0.1f")    
     expiry = st.sidebar.date_input('Time to Expiry', min_value = date.today(), value = date.today() + timedelta(days = 15))
     sigma = st.sidebar.number_input('Volatility (%)', min_value = 0.00, max_value = 100.00, step = 1.0, format = "%0.2f", value = 40.00)
     r = st.sidebar.number_input('Risk Free Rate (%)', min_value = 0.00, max_value = 100.00, step = 0.01, format = "%0.2f", value = 6.731)
