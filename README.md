@@ -1,5 +1,5 @@
 
-# Black Scholes Option Premium Calculate with Visualisation
+# Black Scholes Option Premium Calculater with Visualisation
 
 ## Project Description
 This project is a Black-Scholes Option Pricing Calculator that allows users to calculate the theoretical prices of European call and put options. It is a web-hosted interactive application built with Streamlit, featuring an interface for inputting parameters such as spot price, strike price, time to maturity, volatility, and risk-free rate. The app also visualizes option Greeks and provides sensitivity analysis for informed decision-making in options trading
