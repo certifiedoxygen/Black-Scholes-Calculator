@@ -63,19 +63,26 @@ The Greeks measure the sensitivity of the option's price to changes in underlyin
 #### Greek Formulas:
 ```math
 Δ_{call} = N(d_1) 
-
+```
+```math
 Δ_{put} = N(d_1) - 1 
-
+```
+```math
 Γ = \frac{N'(d_1)}{S_0 \cdot \sigma \sqrt{T}} 
-
+```
+```math
 Θ_{call} = -\frac{S_0 \cdot N'(d_1) \cdot \sigma}{2\sqrt{T}} - rK e^{-rT} N(d_2) 
-
+```
+```math
 Θ_{put} = -\frac{S_0 \cdot N'(d_1) \cdot \sigma}{2\sqrt{T}} + rK e^{-rT} N(-d_2) 
-
+```
+```math
 ν = S_0 \cdot N'(d_1) \cdot \sqrt{T} 
-
+```
+```math
 ρ_{call} = K \cdot T e^{-rT} N(d_2) 
-
+```
+```math
 ρ_{put} = -K \cdot T e^{-rT} N(-d_2) 
 ```
 
